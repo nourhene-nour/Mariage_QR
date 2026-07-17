@@ -13,13 +13,13 @@ margin-top:40px;
 
 .card{
     background-image: url("salle.jpg");
-      width:700px;
+   width:700px;
+margin-left:35px;
+padding:0px;
 
-      padding:5px;
+border-radius:15px;
 
-      border-radius:15px;
-
-      box-shadow:0 0 20px rgba(0,0,0,.15);
+box-shadow:0 0 20px rgba(0,0,0,.15);
 
 text-align:center;
 }
