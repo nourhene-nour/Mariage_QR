@@ -1,28 +1,27 @@
 # -*- coding: utf-8 -*-
 body{
-    margin:0;
-    padding:0;
-    font-family:Arial, sans-serif;
+    background:#f8f5f2;
 
-    background-image: url("salle.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+font-family:Arial;
+
+display:flex;
+
+justify-content:center;
+
+margin-top:40px;
 }
 
 .card{
     background-image: url("salle.jpg");
-    background-size: cover;
-    background-position: center;
-    color:white;
+   width:700px;
 
-    width:700px;
-    height:500px;
+padding:30px;
 
-    border-radius:20px;
+border-radius:15px;
 
-    padding:30px;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+
+text-align:center;
 }
 
 
