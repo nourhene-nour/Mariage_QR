@@ -1,49 +1,145 @@
-# -*- coding: utf-8 -*-
-
-body {
-    margin: 0;
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center;     /* Centre verticalement */
-
-    background-image: url("salle.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+body{
 
-.card {
-    width: 700px;
-    max-width: 90%;
-    padding: 30px;
+    min-height:100vh;
 
-    background: rgba(255, 255, 255, 0.85);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    font-family:'Poppins',sans-serif;
 
-    text-align: center;
+    background-image:url("salle.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
 }
+
+/* voile bleu ciel */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(180,220,255,.35);
+
+    backdrop-filter:blur(3px);
+
+}
+
+/* carte */
+
+.card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:700px;
+
+    max-width:90%;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.25);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+/* titre */
+
+h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    color:#0d3d66;
+
+    margin-bottom:10px;
+
+}
+
+h2{
+
+    color:#2b6ea6;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+
+}
+
+/* texte */
+
+.adresse{
+
+    font-size:22px;
+
+    color:#174b73;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:#234;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/* bouton */
 
 .btn{
 
-display:inline-block;
+    display:inline-block;
 
-margin-top:20px;
+    margin-top:20px;
 
-padding:15px 30px;
+    padding:16px 40px;
 
-background:#0d6efd;
+    text-decoration:none;
 
-color:white;
+    color:white;
 
-text-decoration:none;
+    font-size:18px;
 
-border-radius:10px;
+    border-radius:40px;
 
-font-size:20px;
+    background:linear-gradient(135deg,#7dc8ff,#3f97d7);
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 20px rgba(0,120,255,.35);
 
 }
