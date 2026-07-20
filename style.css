@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-body{
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -13,7 +13,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-}
+
 
 .card {
     width: 700px;
