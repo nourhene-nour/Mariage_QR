@@ -12,10 +12,12 @@ margin-top:40px;
 }
 
 .card{
-    background-image: url("salle.jpg");
-   width:700px;
-margin-left:35px;
-padding:0px;
+
+margin-left:40px;
+    
+width:700px;
+
+padding:30px;
 
 border-radius:15px;
 
